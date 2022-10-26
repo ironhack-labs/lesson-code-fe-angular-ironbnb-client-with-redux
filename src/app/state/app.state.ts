@@ -1,7 +1,7 @@
 import { ActionReducerMap } from "@ngrx/store";
 import { apartmentDetailsReducer, ApartmentDetailState } from "./reducers/apartment-details.reducer";
 import { apartmentsReducer, ApartmentState } from "./reducers/apartments.reducer";
-import { createApartmentReducer, CreateApartmentState } from "./reducers/create-apartments.reducer";
+import { createApartmentReducer, CreateApartmentState } from "./reducers/create-apartment.reducer";
 import { headerReducer } from "./reducers/header.reducer";
 
 export interface AppState {

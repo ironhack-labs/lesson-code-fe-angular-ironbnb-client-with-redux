@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import { createApartmentSuccess, initCreateApartment } from "../actions/create-apartments.action";
+import { createApartmentSuccess, initCreateApartment } from "../actions/create-apartment.action";
 
 export interface CreateApartmentState {
   created: boolean,

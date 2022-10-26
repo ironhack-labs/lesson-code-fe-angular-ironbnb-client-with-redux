@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { Observable, take } from 'rxjs';
-import { createApartment, initCreateApartment } from 'src/app/state/actions/create-apartments.action';
+import { createApartment, initCreateApartment } from 'src/app/state/actions/create-apartment.action';
 import { AppState } from 'src/app/state/app.state';
 import { selectCreateApartmentSuccess } from 'src/app/state/selectors/create-apartment.selector';
 import { selectDarkMode } from 'src/app/state/selectors/header.selector';

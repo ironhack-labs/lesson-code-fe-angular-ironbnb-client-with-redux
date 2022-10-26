@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { concatMap, map } from "rxjs";
 import { IronbnbAPIService } from "src/app/services/ironbnb-api.service";
-import { createApartment, createApartmentSuccess } from "../actions/create-apartments.action";
+import { createApartment, createApartmentSuccess } from "../actions/create-apartment.action";
 
 @Injectable()
 export class CreateApartmentEffects {

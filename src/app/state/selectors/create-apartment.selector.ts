@@ -1,6 +1,6 @@
 import { createSelector } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { CreateApartmentState } from '../reducers/create-apartments.reducer';
+import { CreateApartmentState } from '../reducers/create-apartment.reducer';
  
 
 export const selectCreateApartmentState = (state: AppState) => state.createApartmentStates;
