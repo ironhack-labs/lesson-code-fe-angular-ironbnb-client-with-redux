@@ -1,0 +1,19 @@
+<section [ngClass]="{'dark-theme': darkMode$ | async}">
+  
+  <a [routerLink]="['apartments/create']">
+    Create a new apartment
+  </a>
+  <div *ngIf="loading$ | async">
+    Loading...
+  </div>
+  <div class="apartments-container" *ngIf="!(loading$ | async)">
+    <div *ngFor="let apartment of apartments$ | async">
+      <a [routerLink]="['apartments', apartment._id]">
+        <h2>{{ apartment.title }}</h2>
+        <img [src]="apartment.img" [alt]="apartment.title">
+      </a>
+      <p><strong>{{ apartment.pricePerDay | currency: 'EUR' }}</strong> night </p>
+      <p>{{ apartment.updatedAt | date }}</p>
+    </div>
+  </div>
+</section>

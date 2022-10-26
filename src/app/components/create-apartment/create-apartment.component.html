@@ -1,0 +1,19 @@
+<section [ngClass]="{'dark-theme': darkMode$ | async}">
+  <div class="add-apartment">
+    <h2>Add Apartment</h2>
+    
+    <form (ngSubmit)="createApartment()" [formGroup]="createForm">
+      <label>Title:</label>
+      <input type="text" placeholder="Title..." [formControl]="titleInput">
+      <label>Price per day:</label>
+      <input type="number" placeholder="Price per day..." [formControl]="pricePerDayInput">
+      <label>Image URL:</label>
+      <input type="text" placeholder="Image URL..." [formControl]="imgInput">
+      <button class="submit-btn" type="submit" [disabled]="createForm.invalid">Submit</button>
+      <a class="back-btn" [routerLink]="['']">Back</a>
+    </form>
+
+  </div>
+
+</section>
+

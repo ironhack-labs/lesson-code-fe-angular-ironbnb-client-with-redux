@@ -1,0 +1,11 @@
+<section [ngClass]="{'dark-theme': darkMode$ | async}">
+  <div class="apartment-container"  *ngIf="apartment$ | async as apartment">
+    <a [routerLink]="['apartments', apartment._id]">
+      <h2>{{ apartment.title }}</h2>
+      <img [src]="apartment.img" [alt]="apartment.title">
+    </a>
+    <p><strong>{{ apartment.pricePerDay | currency: 'EUR' }}</strong> night </p>
+    <p>{{ apartment.updatedAt | date }}</p>
+    <a class="back-btn" [routerLink]="['']">Back</a>
+  </div>
+</section>

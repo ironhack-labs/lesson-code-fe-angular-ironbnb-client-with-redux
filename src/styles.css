@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: 'c Cereal', sans-serif;                                        
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}

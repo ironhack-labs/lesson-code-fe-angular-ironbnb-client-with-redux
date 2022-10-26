@@ -1,0 +1,36 @@
+.apartment-container {
+  background: #608dd5;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.apartment-container img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.apartment-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.apartment-container .back-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}

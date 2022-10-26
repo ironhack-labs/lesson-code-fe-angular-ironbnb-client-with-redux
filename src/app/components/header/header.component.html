@@ -1,0 +1,4 @@
+<div [ngClass]="{'dark-theme': darkMode$ | async }">
+  <h1>Welcome to Ironbnb</h1>
+  <button [ngClass]="{'btn': true, 'dark-btn': darkMode$ | async}" (click)="switchMode()"> <span *ngIf="darkMode$ | async">Light</span> <span *ngIf="!(darkMode$ | async)">Dark</span> Mode</button>
+</div>
