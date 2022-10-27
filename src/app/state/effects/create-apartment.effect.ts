@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { concatMap, map } from "rxjs";
+import { map, mergeMap } from "rxjs";
 import { IronbnbAPIService } from "src/app/services/ironbnb-api.service";
 import { createApartment, createApartmentSuccess } from "../actions/create-apartment.action";
 
@@ -14,7 +14,7 @@ export class CreateApartmentEffects {
   createApartment$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(createApartment),
-      concatMap(action => this.ironbnbAPIService.createApartment(action.apartment) // Create the apartment
+      mergeMap(action => this.ironbnbAPIService.createApartment(action.apartment) // Create the apartment
         .pipe(
           map(result => createApartmentSuccess() // dispatch the createApartmentSuccess action
           )

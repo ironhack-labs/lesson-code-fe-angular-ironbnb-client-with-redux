@@ -24,7 +24,6 @@ export class IronbnbAPIService {
   }
 
   createApartment(apartment: Apartment): Observable<Apartment> {
-    console.log('sending', apartment);
     return this.http.post<Apartment>(`${this.BASE_URL}/apartments`, apartment);
   }
 }
