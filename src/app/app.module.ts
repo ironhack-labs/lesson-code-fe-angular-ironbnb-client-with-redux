@@ -26,7 +26,7 @@ import { CreateApartmentEffects } from './state/effects/create-apartment.effect'
     CreateApartmentComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
